@@ -1,0 +1,19 @@
+body {
+	font-family: 'Cantarell', sans-serif;
+	color: $mainDarkGray;
+    
+}
+
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    color: $mainGold;
+}
