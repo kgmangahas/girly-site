@@ -2,6 +2,7 @@
 	
 	position: relative;
 	
+	
 	&__image {
 		display: block;
 		
@@ -10,19 +11,65 @@
 	
 	&__content {
 		
+		font-family: Fjalla+One;
 		position: absolute;
 		width: 100%;	
 		left:0;
 		top:50%;
-		transform: translateY(-50%);		
+		transform: translateY(-60%);		
 		text-align: center;
+		padding-top: 90px;
+		
+		
+		@mixin atSmall {
+			padding-top: 0;
+			transform: translateY(-50%);
+		}
 	}
 	
 	&__title {
-		 font-size: 2.6rem;
+		
+		font-weight: 200;	
+		font-size: 1.58rem;
 		font-weight: 300;
-		color: $mainGray;
+		color: $mainDarkBlue;
+		margin: 0;
+		text-shadow: 2px 2px 0 rgba(0,0,0,.1);
+		
+		
+		@mixin atSmall {
+			font-size: 3.58rem;	
+		}
 		
 	}
 	
+	
+	&__subtitle {
+		
+		font-size:1.1rem;
+		font-weight: 200;
+		color: rgba($mainBlue, .8);
+		margin: 0;
+		
+		
+		@mixin atSmall {
+			font-size:1.58rem;
+			
+		}
+	}
+	
+	&__detail {
+		
+		font-weight: 300;
+		color: rgba($mainGray,.7);		
+		font-size: .85rem;
+		margin-top:10px;
+		
+		@mixin atSmall {
+			margin-bottom: 2rem;
+			font-size:1rem
+			
+		}
+		
+	}
 }

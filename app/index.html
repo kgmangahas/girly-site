@@ -3,7 +3,7 @@
 <head>
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<link href="https://fonts.googleapis.com/css?family=Cantarell:400,100,300,500,700|Fjalla+One:400,300" rel="stylesheet" type="text/css"> 
+	<link href="https://fonts.googleapis.com/css?family=Cantarell:400,100,300,500,700|Fjalla+One:300,400,200" rel="stylesheet" type="text/css"> 
 	<title>DS Creative Studio</title>
 	<meta name="keywords" content="girlboss, web design, branding, feminine web design">
 	<meta name="description" content="Welcome to DS Creative Studio. For all you girl bosses out there, are you ready to create your own brand and have the website that clearly reflects who you are.">	
@@ -25,16 +25,19 @@
     </nav>
   </header>
 
-  <div class="large-hero">		
-			
-		<img class="large-hero__image" src="/assets/images/hero--large-hi-dpi.jpg">
+  <div class="large-hero">
+		<picture>
+			<source srcset="assets/images/hero--large.jpg 1263w, assets/images/hero--large-hi-dpi.jpg 1952w" media="(min-width: 976px)">
+			<source srcset="assets/images/hero--medium.jpg 976w" media="(min-width: 565px)">			
+			<img srcset="assets/images/hero--small.jpg" alt="feminine stock photo" class="large-hero__image">
+		</picture>
 			
 		<div class="large-hero__content">
 				<div class="wrapper">
 					<h1 class="large-hero__title">Branding + Web design</h1>
-					<h2>Your one stop shop for a total makeover</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
-					<p><a href="#">Get Started Today</a></p>
+					<h2 class="large-hero__subtitle">Your one stop shop for a total makeover</h2>
+					<p class="large-hero__detail">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+					<p><a href="#" class="btn">Get Started Today</a></p>
 				</div>
 		</div>
 	

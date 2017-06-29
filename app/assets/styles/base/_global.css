@@ -16,6 +16,7 @@ img {
 
 a {
     color: $mainGold;
+		text-decoration: none;
 }
 
 h1{
