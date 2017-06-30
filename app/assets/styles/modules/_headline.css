@@ -1,24 +1,64 @@
 .headline {
-	font-size: 1.5rem;	
+	font-size: 1rem;	
 		color: $mainGold;
 		font-weight: 300;
+	
+	@mixin atMedium {
+		font-size: 1.5rem;	
+		
+		
+	}
 	
 	
 	&--centered {
 		text-align: center;
+		padding: 0 20px;
+		
+		@mixin atMedium {
+			padding: 0 150px;
+			
+		}
+		
 	}
 	
 	&--large {
-		font-size:2.2rem;
+		font-size:2.1rem;
+		font-weight: 200;
+		
+		@mixin atMedium {
+			font-size: 3.2rem;
+		}
 	}
 	
+	
+	
 	&--b-margin-small {
-		margin-bottom: -.5em;
+		margin-bottom: -.2em;
 	}
 	
 	&--blue {
 		color: $mainBlue;
 	}
+	
+	&--medium {
+		font-size: 1.5rem;
+		
+		@mixin atMedium {
+			font-size: 2.1rem;
+		}
+	}
+	
+	&--t-margin-small {
+		margin-top: 1em;
+		
+		@mixin atMedium {
+			margin-top: 0;
+		}
+	}
+	
+	
+	
+	
 	
 	
 	
